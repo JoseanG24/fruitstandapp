@@ -1,0 +1,116 @@
+/* Estilo general del contenedor */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Cabecera, posible lugar para un logo */
+.header {
+  margin-bottom: 2rem;
+  font-size: 24px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.title {
+  padding: 10px 20px;
+  color: white;
+  font-size: 28px; 
+  font-weight: bold; 
+  text-align: center; 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;  
+}
+
+.title:hover {
+  transform: scale(1.05);  
+}
+
+
+/* Estilos del formulario */
+.formContainer {
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 360px;  /* Tamaño predeterminado */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  opacity: 0.95;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.formContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Mensaje de error */
+.error {
+  color: #ff6b6b;
+  background-color: #ffe5e5;
+  border: 1px solid #ff3e3e;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Estilos de las etiquetas */
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Campos de entrada */
+.inputField {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.inputField:focus {
+  border-color: #a777e3;
+  outline: none;
+}
+
+/* Botón de envío */
+.submitButton {
+  width: 100%;
+  background: #6e8efb;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background: #5a67d8;
+}
+
+/* Responsive para dispositivos pequeños */
+@media (max-width: 600px) {
+  .formContainer {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+
+/* Ajuste para pantallas grandes */
+@media (min-width: 1024px) {
+  .formContainer {
+    max-width: 480px; /* Más ancho en pantallas grandes */
+  }
+}

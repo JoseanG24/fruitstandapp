@@ -1,0 +1,59 @@
+{
+    "standDeFrutas": {
+      "frutas": [
+        {
+          "id": 1,
+          "nombre": "Manzana",
+          "descripcion": "Manzanas frescas y jugosas, perfectas para un snack saludable.",
+          "precio": 1.50
+        },
+        {
+          "id": 2,
+          "nombre": "Banana",
+          "descripcion": "Bananas ricas en potasio, ideales para recuperar energías rápidamente.",
+          "precio": 0.50
+        },
+        {
+          "id": 3,
+          "nombre": "Naranja",
+          "descripcion": "Naranjas de pulpa jugosa y rica en vitamina C, perfectas para un zumo refrescante o para disfrutar en gajos.",
+          "precio": 0.75
+        },
+        {
+          "id": 4,
+          "nombre": "Uvas",
+          "descripcion": "Uvas dulces y crujientes, ideales para un tentempié rápido o para agregar a ensaladas.",
+          "precio": 2.00
+        }
+      ],
+      "bebidas": [
+        {
+          "id": 1,
+          "nombre": "Jugo de naranja natural",
+          "descripcion": "Jugo recién exprimido de naranjas seleccionadas.",
+          "precio": 2.00
+        },
+        {
+          "id": 2,
+          "nombre": "Smoothie de frutas mixtas",
+          "descripcion": "Un delicioso y refrescante smoothie hecho con una mezcla de frutas de estación.",
+          "precio": 3.50
+        }
+      ],
+      "snacks": [
+        {
+          "id": 1,
+          "nombre": "Barra de granola",
+          "descripcion": "Barra de granola casera, con nueces y miel, sin aditivos artificiales.",
+          "precio": 1.75
+        },
+        {
+          "id": 2,
+          "nombre": "Yogurt con frutas",
+          "descripcion": "Yogurt natural con trozos de frutas frescas.",
+          "precio": 2.25
+        }
+      ]
+    }
+  }
+  

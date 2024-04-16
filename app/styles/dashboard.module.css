@@ -1,0 +1,134 @@
+.dashboard {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+.menuSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.menuCategory {
+  background: #f7f7f7;
+  border-left: 5px solid #8a2be2;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menuCategory:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(138,43,226,0.2);
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(45deg, #e0eafc, #cfdef3);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.menuItem:hover {
+  background: linear-gradient(45deg, #b4a7d6, #d5a6bd);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  box-shadow: 10px 7px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar h1 {
+  margin: 0 20px;
+}
+
+.imageLinks {
+  display: flex;
+  gap: 50px;
+}
+
+.images {
+  border-radius: 20px;
+}
+
+.addButton {
+  padding: 6px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+
+
+.addButton:hover {
+  background-color: #367b3b;
+}
+
+.categoryTitle {
+  color: #8a2be2;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.toggleCartButton {
+  position: fixed;
+  top: 20px;
+  right: 20px; 
+  z-index: 1000;
+  background-color: #19dd20;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 30px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggleCartButton:hover {
+  background-color: #28ca30;
+}
+
+/* Animation on cart change */
+@keyframes cartAdd {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.cartUpdated {
+  animation: cartAdd 0.5s ease-in-out;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.span1{
+  color: rgb(169, 169, 3);
+}
+
+.span2 {
+  color: rgb(29, 179, 12);
+}
