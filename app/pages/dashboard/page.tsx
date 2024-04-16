@@ -10,7 +10,17 @@ interface MenuItemData {
   nombre: string;
   descripcion: string;
   precio: number;
+  toppings?: string[];
 }
+
+interface Item {
+  id: number;
+  nombre: string;
+  descripcion: string;
+  precio: number;
+  toppings?: string[];
+}
+
 
 interface MenuData {
   frutas: MenuItemData[];

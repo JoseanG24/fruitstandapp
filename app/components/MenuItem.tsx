@@ -1,25 +1,31 @@
-// Importa useState y FC (Functional Component) de React
+"use client"
 import React, { useState, FC } from 'react';
 import styles from '@/app/styles/menu.module.css';
 
-// Opciones de toppings disponibles
+interface Item {
+  id: number;
+  nombre: string;
+  descripcion: string;
+  precio: number;
+  toppings?: string[];
+}
+
 const toppingsOptions = ["Nueces", "Miel", "Chocolate", "Fresas", "Plátano"];
 
-// Define una interfaz para el objeto 'item'
+
 interface Item {
   nombre: string;
   descripcion: string;
   precio: number;
 }
 
-// Define una interfaz para las props del componente
+
 interface MenuItemProps {
   item: Item;
   addToCart: (item: Item & { toppings: string[] }) => void;
   category: string;
 }
 
-// Define el componente utilizando la interfaz de props
 const MenuItem: FC<MenuItemProps> = ({ item, addToCart, category }) => {
   const [toppings, setToppings] = useState<string[]>([]);
 
