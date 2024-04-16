@@ -78,8 +78,6 @@
   transition: background-color 0.2s;
 }
 
-
-
 .addButton:hover {
   background-color: #367b3b;
 }
@@ -131,4 +129,29 @@
 
 .span2 {
   color: rgb(29, 179, 12);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .menuSection {
+    grid-template-columns: 1fr; /* Stack the menu items vertically on smaller screens */
+  }
+
+  .menuItem, .navbar, .toggleCartButton {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toggleCartButton {
+    padding: 20px 10px; /* Smaller padding for smaller screens */
+  }
+
+  .addButton, .backButton {
+    width: auto; /* Allow buttons to fit content */
+  }
+
+  .imageLinks {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
