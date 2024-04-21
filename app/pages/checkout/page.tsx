@@ -56,7 +56,7 @@ const Checkout = () => {
       </button>
       {showPopup && (
         <div className={styles.popup}>
-          <p>¡Listo puedes ir por tu pedido!</p>
+          <p>¡Listo, tu pedido te llegara mañana!</p>
           <button onClick={handleReturnToDashboard} className={styles.popupbutton}>
             Regresar al Menú
           </button>
