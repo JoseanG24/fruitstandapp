@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import MenuItem from "@/app/components/MenuItem";
 import Cart from "@/app/components/Cart";
 import styles from "@/app/styles/dashboard.module.css";
+import Link from "next/link";
 import Image from "next/image";
 
 interface MenuItemData {
@@ -20,7 +21,6 @@ interface Item {
   precio: number;
   toppings?: string[];
 }
-
 
 interface MenuData {
   frutas: MenuItemData[];
@@ -114,18 +114,39 @@ const Dashboard = () => {
         <h1 className={styles.title}>
           <span className={styles.span2}>Menú</span>
         </h1>
+        <Link className={styles.link} href="/pages/info">Aprende más</Link>
+          <a target="_blank" className={styles.link} href="https://www.instagram.com/frutiss._/">
+            <Image src="/3621435.png" alt="Síguenos en Instagram" width={50} height={50} />
+          </a>
         <div className={styles.imageLinks}>
-          <Image className={styles.images} src="/image1.png" alt="Imagen 1" width={110} height={110} />
-          <Image className={styles.images} src="/image2.png" alt="Imagen 2" width={110} height={110} />
-          <Image className={styles.images} src="/image3.png" alt="Imagen 3" width={110} height={110} />
-          <Image className={styles.images} src="/image4.png" alt="Imagen 4" width={110} height={110} />
+          <Image
+            className={styles.images}
+            src="/image1.png"
+            alt="Imagen 1"
+            width={110}
+            height={110}
+          />
+          <Image
+            className={styles.images}
+            src="/image2.png"
+            alt="Imagen 2"
+            width={110}
+            height={110}
+          />
+          <Image
+            className={styles.images}
+            src="/image4.png"
+            alt="Imagen 4"
+            width={110}
+            height={110}
+          />
         </div>
       </div>
       <button
         onClick={toggleCartVisibility}
         className={styles.toggleCartButton}
       >
-        {`${isCartVisible ? "Cerrar" : "Pedido"}`}
+        🧺
       </button>
       <div className={styles.menuSection}>
         {Object.keys(data).map((category) => (

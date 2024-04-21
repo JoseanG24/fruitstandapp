@@ -43,6 +43,19 @@
   background: linear-gradient(45deg, #b4a7d6, #d5a6bd);
 }
 
+.link {
+  text-decoration: none;
+  font-size: large;
+  color: black;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+  color: #4caf50;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -93,18 +106,19 @@
   top: 20px;
   right: 20px; 
   z-index: 1000;
-  background-color: #19dd20;
+  background-color: rgb(104, 91, 247);
   color: white;
   border: none;
+  font-size: 40px;
   font-weight: bold;
   border-radius: 8px;
-  padding: 30px 20px;
+  padding: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .toggleCartButton:hover {
-  background-color: #28ca30;
+  background-color: #7b15e1;
 }
 
 /* Animation on cart change */
@@ -121,6 +135,7 @@
 .title {
   margin-bottom: 20px;
   font-weight: bolder;
+  cursor: default;
 }
 
 .span1{
